@@ -6,6 +6,9 @@ The primary goal of this project is to develop a machine learning model that can
 #### Jupyter File: 
 The Jupyter file (typically with a .ipynb extension) contains the Python code for data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and evaluation. It is the core file where the machine learning model is developed.
 
+#### Dataset - hotel_booking.csv
+The hotel_booking.csv file contains the dataset used for training and evaluating the machine learning model. It includes information about hotel reservations and whether they were canceled or not. The dataset is essential for building a predictive model as it provides the necessary features and labels for training.
+
 #### CSS for HTML Deployment: 
 This folder contains the Cascading Style Sheets (CSS) files that define the presentation style of the HTML file. These styles enhance the visual appeal and layout of the HTML deployment.
 
