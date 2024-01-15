@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="/staticFiles/style.css">
+</head>
+<body>
+    <div>
+        <form action="{{url_for('predict')}}" method="post">
+                <input type="text" placeholder="lead_time" id="research" name="lead_time">
+                <input type="text" placeholder="arrival_date_year" id="research" name="arrival_date_year">
+                <input type="text" placeholder="stays_in_weekend_nights" id="research" name="stays_in_weekend_nights">
+                <input type="text" placeholder="stays_in_week_nights" id="research" name="stays_in_week_nights">
+                <input type="text" placeholder="adults" id="research" name="adults">
+                <input type="text" placeholder="children" id="research" name="children">
+                <input type="text" placeholder="previous_cancellations" id="research" name="previous_cancellations">
+                <input type="text" placeholder="previous_bookings_not_canceled" id="research" name="previous_bookings_not_canceled">
+                <input type="text" placeholder="booking_changes" id="research" name="booking_changes">
+                <input type="text" placeholder="days_in_waiting_list" id="research" name="days_in_waiting_list">
+                <input type="text" placeholder="avg_daily_rate" id="research" name="avg_daily_rate">
+                <input type="text" placeholder="required_car_parking_spaces" id="research" name="required_car_parking_spaces">
+                <input type="text" placeholder="total_of_special_requests" id="research" name="total_of_special_requests">
+
+            <h3> hotel </h3>
+            <select name="hotel" id="abc">
+                <option value="0">City Hotel</option>
+                <option value="1">Resort Hotel</option>
+            </select>
+
+            <h3> is_repeated_guest </h3>
+            <select name="is_repeated_guest" id="abc">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <h3> arrival_date_month </h3>
+            <select name="arrival_date_month" id="abc">
+                <option value="4">January</option>
+                <option value="3">February</option>
+                <option value="7">March</option>
+                <option value="0">April</option>
+                <option value="8">May</option>
+                <option value="6">June</option>
+                <option value="5">July</option>
+                <option value="1">August</option>
+                <option value="10">September</option>
+                <option value="10">October</option>
+                <option value="9">November</option>
+                <option value="2">December</option>
+            </select>
+
+            <h3> meal </h3>
+            <select name="meal" id="abc">
+                <option value="0">Bed and Breakfast</option>
+                <option value="1">Full Board</option>
+                <option value="2">Half Board</option>
+                <option value="3">Self-Catering</option>
+            </select>
+
+            <h3> market_segment </h3>
+            <select name="market_segment" id="abc">
+                <option value="0">Aviation</option>
+                <option value="1">Complementary</option>
+                <option value="2">Corporate</option>
+                <option value="3">Direct</option>
+                <option value="4">Groups</option>
+                <option value="5">Offline</option>
+                <option value="6">Online</option>
+            </select>
+
+            <h3> assigned_room_type </h3>
+            <select name="assigned_room_type" id="abc">
+                <option value="0">A</option>
+                <option value="1">B</option>
+                <option value="2">C</option>
+                <option value="3">D</option>
+                <option value="4">E</option>
+                <option value="5">F</option>
+                <option value="6">G</option>
+                <option value="7">H</option>
+                <option value="8">I</option>
+                <option value="9">J</option>
+                <option value="10">K</option>
+                <option value="11">L</option>
+                <option value="12">M</option>
+                <option value="13">N</option>
+                <option value="14">O</option>
+                <option value="15">P</option>
+            </select>
+
+            <h3> deposit_type </h3>
+            <select name="deposit_type" id="abc">
+                <option value="0">Non Refundable</option>
+                <option value="1">No Deposit</option>
+                <option value="2">Refundable</option>
+            </select>
+
+            <br><br>
+            <button type="submit" id="sub">Prediction</button>
+
+        </form>
+
+        <br><br>
+        {{prediction_text}}
+        
+    </div>
+</body>
+</html>
